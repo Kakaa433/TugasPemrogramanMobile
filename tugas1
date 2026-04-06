@@ -1,0 +1,80 @@
+tugas praktek kotlin
+
+// 1. cek string
+fun main () {
+    val string1 = "Wukir Sangkakala Ningrat"
+    val string2 = "wukir sangkakala ingrat"
+    
+    println("jumlah karakter string pertama ${string1.length}")
+    println("jumlah karakter string kedua ${string2.length}")
+    
+    if (string1 == string2) {
+        println("Sama")
+    } else {
+        println("Tidak sama")
+    }
+    
+    	println("Pengecekan selesai")
+}
+
+// 2. cek angka
+fun main() {
+    val angka = 69
+    //perbandingan dengan 50
+    if (angka > 50){
+        println("Lebih besar dari 50")
+    } else {
+        println("Lebih kecil atau sama dengan 50")
+    }
+    
+    // kelipatan 5    
+    if (angka % 5 == 0 && angka % 5 == 0) {
+        println("kelipatan 4 dan 6") 
+    } else if (angka % 4 == 0) {
+        print("kelipatan 5")
+    } else {
+        println("bukan kelipatan 5")
+    }
+}
+
+// 3. cek genap
+fun main() {
+    val angka = intArrayOf(21, 32, 43, 24, 27, 28)
+
+    println("Bilangan genap:")
+
+    for (number in angka) {
+        if (number % 2 == 0) {
+            println(number)
+        }
+    }
+}
+
+// 4. cek usia
+fun main () {
+    val umur = 969
+    
+    val usia = when (umur) {
+        in 6..12 -> "Bocil"
+        in 13..16 -> "Remaja"
+        in 17..100 -> "Dewasa"
+        else -> "Abnormal"
+    }
+    
+    println("Kamu termasuk $usia")
+}
+
+// 5. cek kelipatan 3 dan 5
+fun main() {
+    val angka = 30
+    
+    if(angka % 3 == 0 && angka % 5 == 0) {
+        println("Kelipatan 3 dan 5")
+    } else if (angka % 3 == 0) {
+        println("Kelipatan 3")
+    } else if (angka % 5 == 0) {
+        println ("Kelipatan 5")
+    } else {
+        println ("Bukan kelipatan 3 maupun 5")
+    }
+}
